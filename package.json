@@ -1,9 +1,8 @@
 {
-  "name": "advanced-react-patterns-v2",
+  "name": "advanced-react-patterns",
   "version": "1.0.0",
-  "description": "The updated version of my advanced react component patterns course",
+  "description": "advanced react component patterns ",
   "keywords": [],
-  "homepage": "http://advanced-react-patterns.netlify.com/",
   "main": "src/index.js",
   "dependencies": {
     "hoist-non-react-statics": "^2.5.0",
@@ -33,14 +32,13 @@
     "test:coverage": "npm run test -- --coverage",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
-    "setup": "node ./scripts/verify && node ./scripts/install && npm run validate && node ./scripts/autofill-feedback-email.js",
+    "setup":
+      "node ./scripts/verify && node ./scripts/install && npm run validate && node ./scripts/autofill-feedback-email.js",
     "validate": "npm-run-all --parallel build test:coverage",
     "precommit": "npm run validate"
   },
   "jest": {
-    "collectCoverageFrom" : [
-      "src/exercises-final/**/*.js"
-    ]
+    "collectCoverageFrom": ["src/exercises-final/**/*.js"]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,11 +49,6 @@
       "last 2 firefox versions",
       "last 2 edge versions"
     ],
-    "production": [
-      ">1%",
-      "last 4 versions",
-      "Firefox ESR",
-      "not ie < 11"
-    ]
+    "production": [">1%", "last 4 versions", "Firefox ESR", "not ie < 11"]
   }
 }
